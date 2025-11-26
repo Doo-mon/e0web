@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [
+                        ['$', '$'],
+                        ['\\(', '\\)'],
+                    ],
+                },
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="e0 website" />
+        <meta name="author" content="zhihao zhan" />
+        <title>Creative - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- 顶部导航栏-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">$\mathcal{E}_0$</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="_blank">
+                                <i class="bi-file-earmark-text-fill me-1"></i>
+                                ArXiv
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="_blank">
+                                <i class="bi-github me-1"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="_blank" style="display: flex; align-items: center">
+                                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" style="width: 18px; height: 18px; margin-right: 6px" />
+                                HF
+                            </a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Overview</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Result</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="VideosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Videos</a>
+                            <ul class="dropdown-menu custom-dropdown" aria-labelledby="VideosDropdown">
+                                <li><a class="dropdown-item" href="#libero-result">LIBERO</a></li>
+                                <li><a class="dropdown-item" href="#maniskill-result">ManiSkill</a></li>
+                                <li><a class="dropdown-item" href="#vlabench-result">VLABench</a></li>
+                                <li><a class="dropdown-item" href="#robotwin-result">RoboTwin</a></li>
+                                <li><a class="dropdown-item" href="#realworld-result">Real-World</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 标题页-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-12 align-self-end">
+                        <h1 class="text-white font-weight-bold">
+                            <!-- | $\mathcal{E}_0$: Enhancing Generalization and Fine-Grained Control in VLA Models via Continuized Discrete Diffusion-->
+                            <span style="color: #ff6600">$\mathcal{E}_0$:</span>
+                            <span style="color: #00000">Enhancing Generalization and Fine-Grained Control in VLA Models</span>
+                            <br />
+                            <span style="color: #00000">via</span>
+                            <span style="color: #ff6600">Continuized Discrete Diffusion</span>
+                        </h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mt-3" style="font-size: 1.1rem; line-height: 1.6; text-align: center">Zhihao Zhan¹,&nbsp;&nbsp; Jiaying Zhou¹,&nbsp;&nbsp; Likui Zhang¹,&nbsp;&nbsp; Qinhan Lv¹,&nbsp;&nbsp; Hao Liu¹,&nbsp;&nbsp; Jusheng Zhang¹,&nbsp;&nbsp; Weizheng Li¹,&nbsp;&nbsp; Ziliang Chen¹,&nbsp;&nbsp; Tianshui Chen³⁴,&nbsp;&nbsp; Keze Wang¹,&nbsp;&nbsp; Liang Lin¹²³,&nbsp;&nbsp; Guangrun Wang¹²³</p>
+                        <!-- 单位信息-->
+                        <p class="text-white-75 mt-2" style="font-size: 1rem; line-height: 1.4; text-align: center">
+                            ¹ Sun Yat-sen University, Guangzhou, China
+                            <br />
+                            ² Guangdong Key Laboratory of Big Data Analysis and Processing
+                            <br />
+                            ³ X-Era AI Lab
+                            <br />
+                            ⁴ Guangdong University of Technology
+                        </p>
+                        <!-- Logo + 主单位-->
+                        <p class="text-white-75 mt-3" style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.1rem">
+                            <img src="assets/sysu_logo.svg" alt="SYSU Logo" style="height: 34px" />
+                            SUN YAT-SEN UNIVERSITY
+                        </p>
+                        <div class="text-center mt-4">
+                            <a class="btn btn-primary btn-xl mx-2" href="#abstract">
+                                <i class="bi-play-circle me-2"></i>
+                                Details
+                            </a>
+                            <a class="btn btn-outline-light btn-xl mx-2" href="" target="_blank">
+                                <i class="bi-file-earmark-text me-2"></i>
+                                ArXiv
+                            </a>
+                            <a class="btn btn-outline-light btn-xl mx-2" href="" target="_blank">
+                                <i class="bi-github me-2"></i>
+                                GitHub
+                            </a>
+                            <a class="btn btn-outline-light btn-xl mx-2" href="" target="_blank" style="display: inline-flex; align-items: center">
+                                <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" style="width: 22px; height: 22px; margin-right: 8px" />
+                                HuggingFace
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="page-section" id="abstract" style="background-color: #f2f2f2">
+            <div class="container" style="max-width: 900px">
+                <div class="text-center">
+                    <h2 class="mt-0" style="color: #ff6600; font-weight: 800; font-size: 2.4rem; text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25)">Abstract</h2>
+                    <hr class="divider" style="border-color: #d14b6e" />
+                </div>
+                <p class="text-black mt-4" style="font-size: 1.05rem; line-height: 1.7; text-align: justify">
+                    Vision–Language–Action (VLA) models offer a unified framework for robotic manipulation by integrating visual perception, language understanding, and control generation. Yet existing VLA models still struggle to generalize across diverse tasks, scenes, and camera viewpoints, and often produce coarse or unstable actions.
+                    <strong>We introduce $\mathcal{E}_0$, a continuized discrete diffusion framework that formulates action generation as iterative denoising over quantized action tokens.</strong>
+                    Compared with continuous diffusion policies, $\mathcal{E}_0$ offers two key advantages: (1) discrete action tokens align naturally with the symbolic structure of pretrained VLM/VLA backbones, enabling stronger semantic conditioning; and (2) discrete diffusion matches the true quantized nature of real-world robot control—whose hardware constraints (e.g., encoder resolution, control frequency, actuation latency) inherently discretize continuous signals—and therefore benefits from a Bayes-optimal denoiser that models the correct discrete action distribution, leading to stronger generalization. Compared with discrete autoregressive and mask-based discrete diffusion models, $\mathcal{E}_0$ supports a significantly larger and finer-grained action vocabulary and avoids the distributional mismatch introduced by masking-based corruptions—yielding more accurate fine-grained action control. We further introduce a spherical viewpoint perturbation augmentation method to improve
+                    robustness to camera shifts without additional data. Experiments on LIBERO, VLABench, and ManiSkill show that $\mathcal{E}_0$ achieves state-of-the-art performance across 14 diverse environments, outperforming strong baselines by 10.7% on average. Real-world evaluation on a Franka arm confirms that $\mathcal{E}_0$ delivers precise, robust, and transferable manipulation, establishing discrete diffusion as a promising direction for generalizable VLA policy learning.
+                </p>
+            </div>
+        </section>
+        <section class="page-section bg-white" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <h2 class="mt-0" style="color: #ff6600; font-weight: 800; font-size: 2.4rem; text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25)">Overview</h2>
+                        <hr class="divider divider-light" />
+                        <img class="img-fluid" src="assets/img/overview/e0.png" style="width: 100%" />
+                        <p class="text-black mb-4">
+                            <strong>Fig.1 Overview and detailed illustration of $\mathcal{E}_0$.</strong>
+                            (a) Overall architecture of the proposed model. (b) Training and inference pipeline, showing how inputs are encoded, diffused, and decoded into executable action sequences.
+                        </p>
+                        <hr class="divider divider-light" />
+                        <img class="img-fluid" src="assets/img/overview/diff.png" style="width: 60%" />
+                        <p class="text-black mb-4">
+                            <strong>Fig.2 Overview of action modeling paradigms.</strong>
+                            (a) Discrete modeling: Traditional autoregressive (AR) approaches and recent mask-based discrete diffusion methods, which operate over a small discrete action vocabulary. (b) Continuous modeling: Continuous diffusion–based policies and AR–diffusion hybrids that regress continuous actions. (c) Our approach: $\mathcal{E}_0$ integrates AR-style conditioning with continuized discrete diffusion, enabling efficient action generation while preserving compatibility with pretrained vision–language backbones and supporting fine-grained action control.
+                        </p>
+                        <!--a.btn.btn-light.btn-xl(href='#services') More-->
+                        <a class="btn btn-primary btn-xl" href="#services">More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-light-gray" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center">
+                    <h2 class="mt-0" style="color: #ff6600; font-weight: 800; font-size: 2.4rem; text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25)">Results</h2>
+                    <hr class="divider" />
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <a class="col-lg-3 col-md-6 text-center" href="#ablation" style="text-decoration: none; color: inherit; cursor: pointer">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">
+                                Ablation
+                                <br />
+                                Experiments
+                            </h3>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-md-6 text-center" href="#libero-result" style="text-decoration: none; color: inherit; cursor: pointer">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">
+                                Simulation
+                                <br />
+                                Experiments
+                            </h3>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-md-6 text-center" href="#realworld-result" style="text-decoration: none; color: inherit; cursor: pointer">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">
+                                Real World
+                                <br />
+                                Experiments
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-white" id="ablation">
+            <div class="container px-4 px-lg-5">
+                <!-- 主标题-->
+                <h2 class="text-center mt-0">Ablation Experiments</h2>
+                <hr class="divider" />
+                <!-- 内容区域-->
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <img class="img-fluid" src="assets/img/result/ablation_summary.png" style="width: 100%; max-width: 1100px; border-radius: 10px" />
+                        <p class="text-black mt-3" style="font-size: 1.1rem">
+                            <strong>Fig.3 Comprehensive ablation analysis of key hyperparameters in the LIBERO environments.</strong>
+                            We investigate four crucial design factors influencing our model: (a) Discretization bins—increasing bin granularity enhances precision up to 2048 bins, beyond which gains saturate; (b) Action horizon—a moderate prediction length balances reactivity and temporal consistency; (c) Action dimensions—embedding sizes slightly above the dataset’s action space yield the best expressiveness–robustness trade-off; and (d) One-hot smooth factor—moderate decay values smooth discrete logits, stabilizing diffusion and improving overall success rate.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-white" id="libero-result">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">LIBERO Compare Results</h2>
+                <hr class="divider" />
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/libero-compare-1/pi0_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$-FAST Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/libero-compare-1/pi0fast_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_{0.5}$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/libero-compare-1/pi05_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\mathcal{E}_0$ Success</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/libero-compare-1/e0_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black">
+                            <strong>Comparison on the LIBERO benchmark.</strong>
+                            In the task
+                            <strong>pick up the milk and place it in the basket</strong>
+                            , our $\mathcal{E}_0$ successfully grasped the object with the correct posture and completed the task without knocking it over.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-white" id="maniskill-result">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">ManiSkill Compare Results</h2>
+                <hr class="divider" />
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-1/pi0_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$-FAST Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-1/pi0fast_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_{0.5}$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-1/pi05_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\mathcal{E}_0$ Success</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-1/e0_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black">
+                            <strong>Comparison on the ManiSkill benchmark.</strong>
+                            In the task
+                            <strong>PegInsertionSide</strong>
+                            , our $\mathcal{E}_0$ achieved the best performance in this highly dexterous task. It was able to precisely align the peg with the hole and successfully insert it, while other models performed poorly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-white" id="vlabench-result">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">VLABench Compare Results</h2>
+                <hr class="divider" />
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-1/pi0_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$-FAST Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-1/pi0fast_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_{0.5}$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-1/pi05_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\mathcal{E}_0$ Success</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-1/e0_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black">
+                            <strong>Comparison on the VLABench benchmark.</strong>
+                            In the task
+                            <strong>pick up the spade 3</strong>
+                            , our $\mathcal{E}_0$ correctly identifies and precisely grasps the target card , showing superior multimodal reasoning and control.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-white" id="robotwin-result">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">RoboTwin Results</h2>
+                <hr class="divider" />
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-2">
+                    <div class="col text-center">
+                        <h6 class="mt-2">adjust bottle</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/adjust_bottle_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">beat block hammer</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/beat_block_hammer_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">click alarmclock</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/click_alarmclock_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">click bell</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/click_bell_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">dump bin bigbin</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/dump_bin_bigbin_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">move can pot</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/move_can_pot_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">move pillbottle pad</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/move_pillbottle_pad_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">move playingcard away</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/move_playingcard_away_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">move stapler pad</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/move_stapler_pad_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">open laptop</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/open_laptop_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">open microwave</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/open_microwave_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place a2b left</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_a2b_left_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place a2b right</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_a2b_right_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place container plate</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_container_plate_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place empty cup</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_empty_cup_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place fan</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_fan_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place mouse pad</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_mouse_pad_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place object scale</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_object_scale_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place object stand</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_object_stand_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place phone stand</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_phone_stand_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place shoe</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_shoe_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">press stapler</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/press_stapler_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">rotate qrcode</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/rotate_qrcode_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">shake bottle</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/shake_bottle_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">shake bottle horizontally</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/shake_bottle_horizontally_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">stamp seal</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/stamp_seal_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">turn switch</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/turn_switch_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">blocks ranking rgb</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/blocks_ranking_rgb_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">blocks ranking size</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/blocks_ranking_size_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">grab roller</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/grab_roller_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">handover block</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/handover_block_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">handover mic</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/handover_mic_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">hanging mug</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/hanging_mug_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">lift pot</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/lift_pot_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">pick diverse bottles</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/pick_diverse_bottles_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">pick dual bottles</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/pick_dual_bottles_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place bread basket</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_bread_basket_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place bread skillet</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_bread_skillet_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place burger fries</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_burger_fries_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place can basket</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_can_basket_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place cans plasticbox</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_cans_plasticbox_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place dual shoes</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_dual_shoes_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">place object basket</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/place_object_basket_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">put bottles dustbin</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/put_bottles_dustbin_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">put object cabinet</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/put_object_cabinet_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">scan object</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/scan_object_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">stack blocks three</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/stack_blocks_three_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">stack blocks two</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/stack_blocks_two_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">stack bowls three</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/stack_bowls_three_success.mp4"></video>
+                    </div>
+                    <div class="col text-center">
+                        <h6 class="mt-2">stack bowls two</h6>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/robotwin/stack_bowls_two_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black mt-3">
+                            <strong>RoboTwin benchmark overview.</strong>
+                            The benchmark consists of 27 single-arm and 23 dual-arm manipulation tasks, spanning a diverse range of objects and actions. Several dual-arm tasks additionally require coordinated bimanual control, posing higher challenges for policy learning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-white" id="realworld-result">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Real-World Experiments</h2>
+                <hr class="divider" />
+                <!-- === video 1 ===-->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-9 text-center">
+                        <h4 class="mt-3">Short-Horizon Tasks</h4>
+                        <video autoplay loop muted playsinline controls style="width: 100%; border-radius: 14px" src="assets/img/result/realworld/real-fig-5-fig-16-short.mp4"></video>
+                        <p class="text-black mt-">
+                            <strong>Performance on real-world robotic experiments.</strong>
+                            Short-horizon tasks (
+                            <strong>pick block, press button, close door, pull drawer, stack block</strong>
+                            ).
+                        </p>
+                    </div>
+                </div>
+                <!-- === video 2 ===-->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-9 text-center">
+                        <h4 class="mt-3">Long-Horizon Tasks</h4>
+                        <video autoplay loop muted playsinline controls style="width: 100%; border-radius: 14px" src="assets/img/result/realworld/real-fig-5-long.mp4"></video>
+                        <p class="text-black mt-3">
+                            <strong>Performance on real-world robotic experiments.</strong>
+                            Long-horizon tasks (
+                            <strong>pick block twice, pull drawer and put in block,</strong>
+                            and
+                            <strong>put in plate and close door</strong>
+                            ).
+                        </p>
+                    </div>
+                </div>
+                <!-- === video 3 ===-->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-9 text-center">
+                        <h4 class="mt-3">Unseen Scenario</h4>
+                        <video autoplay loop muted playsinline controls style="width: 100%; border-radius: 14px" src="assets/img/result/realworld/real-fig-14-unseen.mp4"></video>
+                        <p class="text-black mt-3">
+                            <strong>Comparison of keyframes in the real-world pick twice task under unseen scenarios.</strong>
+                            During evaluation, we tested the model across various unseen scenarios. In most cases, the model successfully completed the task. In a few cases, task quality is slightly compromised but still acceptable—for example, placement deviations caused by an oversized green dish, or changes in the order of object picking due to color variations.
+                        </p>
+                    </div>
+                </div>
+                <!-- === video 4 ===-->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-9 text-center">
+                        <h4 class="mt-3">Human Intervention</h4>
+                        <video autoplay loop muted playsinline controls style="width: 100%; border-radius: 14px" src="assets/img/result/realworld/real-fig-15-intervention.mp4"></video>
+                        <p class="text-black mt-3">
+                            <strong>Comparison of keyframes in real-world pick twice task with and without human intervention.</strong>
+                            We introduce human perturbation by manually shifting the target cube to disrupt the model's original plan. After the interruption, the model is able to promptly adapt and replan its actions.
+                        </p>
+                    </div>
+                </div>
+                <!-- === video 5 ===-->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-9 text-center">
+                        <h4 class="mt-3">Pick Vegetables Twice Tasks</h4>
+                        <video autoplay loop muted playsinline controls style="width: 100%; border-radius: 14px" src="assets/img/result/realworld/real-fig-17-pick-vegetables.mp4"></video>
+                        <p class="text-black mt-3">
+                            <strong>Qualitative results on the real-world Pick Vegetables Twice task under randomly arranged tabletop scenes.</strong>
+                            Each video shows one complete execution sequence consisting of two consecutive pick-and-place operations
+                            <strong>(carrot and cucumber, potato and eggplant, pepper and corn) .</strong>
+                            Across all settings, the surrounding distractor objects are placed in completely random configurations, demonstrating the robustness of our policy under visually diverse and cluttered real-world environments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section bg-dark text-white" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider" />
+                        <p class="text-muted mb-5">
+                            If you have any questions, feel free to send us a message and we'll get back to you as soon as possible!
+                            <br />
+                            Email: zhanzhh6@mail2.sysu.edu.cn
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5 text-center">
+                <!-- 实验室名称-->
+                <p class="small text-muted mb-1">Human Cyber Physical Intelligence Integration Lab (HCP), SUN YAT-SEN UNIVERSITY</p>
+                <!-- 实验室官网链接-->
+                <p class="small text-muted mb-3"><a href="https://www.sysu-hcp.net/" target="_blank" style="text-decoration: none">https://www.sysu-hcp.net/</a></p>
+                <!-- 模板致谢（小且不影响整体视觉）-->
+                <p class="small text-muted mt-4" style="font-size: 0.75rem">
+                    This site is powered by the
+                    <a href="https://startbootstrap.com/theme/creative" target="_blank" style="text-decoration: none">Start Bootstrap Creative Theme</a>
+                    .
+                </p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
