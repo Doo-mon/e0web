@@ -43,7 +43,10 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
                         li.nav-item
-                            a.nav-link(href='https://arxiv.org/abs/2511.21542', target='_blank')
+                            a.nav-link(
+                                href='javascript:void(0)',
+                                onclick="window.open('https://arxiv.org/abs/2511.21542','_blank');"
+                            )
                                 i.bi-file-earmark-text-fill.me-1
                                 | ArXiv
 
@@ -142,9 +145,7 @@ html(lang='en')
                                 | Details
 
 
-                            a.btn.btn-outline-light.btn-xl.mx-2(
-                                href='https://arxiv.org/abs/2511.21542', target='_blank'
-                            )
+                            a.btn.btn-outline-light.btn-xl.mx-2(href='javascript:void(0)', onclick="window.open('https://arxiv.org/abs/2511.21542', '_blank');")
                                 i.bi-file-earmark-text.me-2
                                 | ArXiv
 
