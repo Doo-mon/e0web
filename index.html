@@ -140,13 +140,13 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10 text-center">
                         <h2 class="mt-0" style="color: #ff6600; font-weight: 800; font-size: 2.4rem; text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25)">Overview</h2>
-                        <hr class="divider divider-light" />
+                        <hr class="divider" style="border-color: #d14b6e" />
                         <img class="img-fluid" src="assets/img/overview/e0.png" style="width: 100%" />
                         <p class="text-black mb-4">
                             <strong>Fig.1 Overview and detailed illustration of $\mathcal{E}_0$.</strong>
                             (a) Overall architecture of the proposed model. (b) Training and inference pipeline, showing how inputs are encoded, diffused, and decoded into executable action sequences.
                         </p>
-                        <hr class="divider divider-light" />
+                        <hr class="divider" style="border-color: #d14b6e" />
                         <img class="img-fluid" src="assets/img/overview/diff.png" style="width: 60%" />
                         <p class="text-black mb-4">
                             <strong>Fig.2 Overview of action modeling paradigms.</strong>
@@ -240,10 +240,38 @@
                 <div class="row justify-content-center mt-5">
                     <div class="col-lg-10 text-center">
                         <p class="text-black">
-                            <strong>Comparison on the LIBERO benchmark.</strong>
+                            <!--strong Comparison on the LIBERO benchmark.-->
                             In the task
                             <strong>pick up the milk and place it in the basket</strong>
                             , our $\mathcal{E}_0$ successfully grasped the object with the correct posture and completed the task without knocking it over.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/libero-compare-2/pi0_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$-FAST Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/libero-compare-2/pi0fast_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_{0.5}$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/libero-compare-2/pi05_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\mathcal{E}_0$ Success</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/libero-compare-2/e0_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black">
+                            <!--strong Comparison on the LIBERO benchmark.-->
+                            In the task
+                            <strong>put_the_bowl_on_the_plate</strong>
+                            , our $\mathcal{E}_0$ accurately and swiftly grasped the object and completed the task.
                         </p>
                     </div>
                 </div>
@@ -274,10 +302,64 @@
                 <div class="row justify-content-center mt-5">
                     <div class="col-lg-10 text-center">
                         <p class="text-black">
-                            <strong>Comparison on the ManiSkill benchmark.</strong>
+                            <!--strong Comparison on the ManiSkill benchmark.-->
                             In the task
                             <strong>PegInsertionSide</strong>
                             , our $\mathcal{E}_0$ achieved the best performance in this highly dexterous task. It was able to precisely align the peg with the hole and successfully insert it, while other models performed poorly.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-2/pi0_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$-FAST Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-2/pi0fast_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_{0.5}$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-2/pi05_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\mathcal{E}_0$ Success</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-2/e0_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black">
+                            In the task
+                            <strong>PlugCharger</strong>
+                            , our $\mathcal{E}_0$ performed the task with high precision and fine-grained control.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-3/pi0_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$-FAST Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-3/pi0fast_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_{0.5}$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-3/pi05_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\mathcal{E}_0$ Success</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/maniskill-compare-3/e0_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black">
+                            In the task
+                            <strong>StackCube</strong>
+                            , our $\mathcal{E}_0$ accomplished the task remarkably well.
                         </p>
                     </div>
                 </div>
@@ -308,10 +390,64 @@
                 <div class="row justify-content-center mt-5">
                     <div class="col-lg-10 text-center">
                         <p class="text-black">
-                            <strong>Comparison on the VLABench benchmark.</strong>
+                            <!--strong Comparison on the VLABench benchmark.-->
                             In the task
                             <strong>pick up the spade 3</strong>
                             , our $\mathcal{E}_0$ correctly identifies and precisely grasps the target card , showing superior multimodal reasoning and control.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-2/pi0_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$-FAST Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-2/pi0fast_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_{0.5}$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-2/pi05_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\mathcal{E}_0$ Success</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-2/e0_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black">
+                            In the task
+                            <strong>select mahjong</strong>
+                            , our $\mathcal{E}_0$ correctly identified the target object specified by the instruction and completed the task without knocking over any other items.
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center gap-4">
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-3/pi0_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_0$-FAST Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-3/pi0fast_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\pi_{0.5}$ Failure</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-3/pi05_failure.mp4"></video>
+                    </div>
+                    <div class="text-center" style="width: 22%">
+                        <h5 class="mt-3">$\mathcal{E}_0$ Success</h5>
+                        <video autoplay loop muted playsinline style="width: 100%; border-radius: 10px" src="assets/img/result/vlabench-compare-3/e0_success.mp4"></video>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-10 text-center">
+                        <p class="text-black">
+                            In the task
+                            <strong>select painting</strong>
+                            , our $\mathcal{E}_0$ correctly interpreted the task instruction and completed the task accordingly, rather than mechanically pressing the center button.
                         </p>
                     </div>
                 </div>

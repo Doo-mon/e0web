@@ -209,7 +209,7 @@ html(lang='en')
                         h2.mt-0(style="color:#ff6600;font-weight:800;font-size:2.4rem;text-shadow: 2px 3px 4px rgba(0,0,0,0.25);") Overview
                         
 
-                        hr.divider.divider-light
+                        hr.divider(style="border-color:#d14b6e;")
                         img.img-fluid(src="assets/img/overview/e0.png", style="width: 100%;")
                         p.text-black.mb-4
                             strong Fig.1 Overview and detailed illustration of $\mathcal{E}_0$.
@@ -217,7 +217,7 @@ html(lang='en')
                             | (b) Training and inference pipeline, showing how inputs are encoded, diffused, and decoded into executable action sequences.
 
 
-                        hr.divider.divider-light
+                        hr.divider(style="border-color:#d14b6e;")
                         img.img-fluid(src="assets/img/overview/diff.png", style="width: 60%;")
                         p.text-black.mb-4
                             strong Fig.2 Overview of action modeling paradigms.
@@ -305,7 +305,6 @@ html(lang='en')
                             src="assets/img/result/libero-compare-1/pi0_failure.mp4")
                         //- p.text-muted.mt-2 $\pi_0$ fails under the same conditions.
 
-        
                     .text-center(style="width:22%")
                         h5.mt-3 $\pi_0$-FAST Failure
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
@@ -324,16 +323,49 @@ html(lang='en')
                             src="assets/img/result/libero-compare-1/e0_success.mp4")
                         //- p.text-muted.mt-2 $\mathcal{E}_0$ successfully completes the task.
 
-  
                 .row.justify-content-center.mt-5
                     .col-lg-10.text-center
                         p.text-black
-                            strong Comparison on the LIBERO benchmark.
+                            //strong Comparison on the LIBERO benchmark.
                             | In the task 
                             strong pick up the milk and place it in the basket
                             | , our $\mathcal{E}_0$ 
                             | successfully grasped the object with the correct posture and completed the task without knocking it over.
 
+
+
+                .d-flex.flex-wrap.justify-content-center.gap-4
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/libero-compare-2/pi0_failure.mp4")
+
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$-FAST Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/libero-compare-2/pi0fast_failure.mp4")
+
+
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_{0.5}$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/libero-compare-2/pi05_failure.mp4")
+
+
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\mathcal{E}_0$ Success
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/libero-compare-2/e0_success.mp4")
+
+  
+                .row.justify-content-center.mt-5
+                    .col-lg-10.text-center
+                        p.text-black
+                            //strong Comparison on the LIBERO benchmark.
+                            | In the task 
+                            strong put_the_bowl_on_the_plate
+                            | , our $\mathcal{E}_0$ 
+                            | accurately and swiftly grasped the object and completed the task.
 
 
 
@@ -345,40 +377,86 @@ html(lang='en')
                 hr.divider
 
                 .d-flex.flex-wrap.justify-content-center.gap-4
-
                     .text-center(style="width:22%")
                         h5.mt-3 $\pi_0$ Failure
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
                             src="assets/img/result/maniskill-compare-1/pi0_failure.mp4")
                         //- p.text-muted.mt-2 $\pi_0$ fails under the same conditions.
-
-        
                     .text-center(style="width:22%")
                         h5.mt-3 $\pi_0$-FAST Failure
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
                             src="assets/img/result/maniskill-compare-1/pi0fast_failure.mp4")
                         //- p.text-muted.mt-2 $\pi_0$-FAST struggles with precision.
-
                     .text-center(style="width:22%")
                         h5.mt-3 $\pi_{0.5}$ Failure
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
                             src="assets/img/result/maniskill-compare-1/pi05_failure.mp4")
                         //- p.text-muted.mt-2 $\pi_{0.5}$ is unable to execute reliably.
-
                     .text-center(style="width:22%")
                         h5.mt-3 $\mathcal{E}_0$ Success
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
                             src="assets/img/result/maniskill-compare-1/e0_success.mp4")
                         //- p.text-muted.mt-2 $\mathcal{E}_0$ successfully completes the task.
-
                 .row.justify-content-center.mt-5
                     .col-lg-10.text-center
                         p.text-black
-                            strong Comparison on the ManiSkill benchmark.
+                            //strong Comparison on the ManiSkill benchmark.
                             | In the task 
                             strong PegInsertionSide
                             | , our $\mathcal{E}_0$ achieved the best performance in this highly dexterous task.
                             | It was able to precisely align the peg with the hole and successfully insert it, while other models performed poorly.
+
+
+                .d-flex.flex-wrap.justify-content-center.gap-4
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/maniskill-compare-2/pi0_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$-FAST Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/maniskill-compare-2/pi0fast_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_{0.5}$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/maniskill-compare-2/pi05_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\mathcal{E}_0$ Success
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/maniskill-compare-2/e0_success.mp4")
+                .row.justify-content-center.mt-5
+                    .col-lg-10.text-center
+                        p.text-black
+                            | In the task 
+                            strong PlugCharger
+                            | , our $\mathcal{E}_0$ performed the task with high precision and fine-grained control.
+
+
+                .d-flex.flex-wrap.justify-content-center.gap-4
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/maniskill-compare-3/pi0_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$-FAST Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/maniskill-compare-3/pi0fast_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_{0.5}$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/maniskill-compare-3/pi05_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\mathcal{E}_0$ Success
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/maniskill-compare-3/e0_success.mp4")
+                .row.justify-content-center.mt-5
+                    .col-lg-10.text-center
+                        p.text-black
+                            | In the task 
+                            strong StackCube
+                            | , our $\mathcal{E}_0$ accomplished the task remarkably well.
+       
+
 
 
 
@@ -389,41 +467,85 @@ html(lang='en')
                 hr.divider
 
                 .d-flex.flex-wrap.justify-content-center.gap-4
-
                     .text-center(style="width:22%")
                         h5.mt-3 $\pi_0$ Failure
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
                             src="assets/img/result/vlabench-compare-1/pi0_failure.mp4")
                         //- p.text-muted.mt-2 $\pi_0$ fails under the same conditions.
-
-        
                     .text-center(style="width:22%")
                         h5.mt-3 $\pi_0$-FAST Failure
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
                             src="assets/img/result/vlabench-compare-1/pi0fast_failure.mp4")
                         //- p.text-muted.mt-2 $\pi_0$-FAST struggles with precision.
-
                     .text-center(style="width:22%")
                         h5.mt-3 $\pi_{0.5}$ Failure
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
                             src="assets/img/result/vlabench-compare-1/pi05_failure.mp4")
                         //- p.text-muted.mt-2 $\pi_{0.5}$ is unable to execute reliably.
-
                     .text-center(style="width:22%")
                         h5.mt-3 $\mathcal{E}_0$ Success
                         video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
                             src="assets/img/result/vlabench-compare-1/e0_success.mp4")
                         //- p.text-muted.mt-2 $\mathcal{E}_0$ successfully completes the task.
-
                 .row.justify-content-center.mt-5
                     .col-lg-10.text-center
                         p.text-black
-                            strong Comparison on the VLABench benchmark.
+                            //strong Comparison on the VLABench benchmark.
                             | In the task 
                             strong pick up the spade 3
                             | , our $\mathcal{E}_0$ correctly identifies and precisely grasps the target card
                             | , showing superior multimodal reasoning and control.
        
+                .d-flex.flex-wrap.justify-content-center.gap-4
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/vlabench-compare-2/pi0_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$-FAST Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/vlabench-compare-2/pi0fast_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_{0.5}$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/vlabench-compare-2/pi05_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\mathcal{E}_0$ Success
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/vlabench-compare-2/e0_success.mp4")
+                .row.justify-content-center.mt-5
+                    .col-lg-10.text-center
+                        p.text-black
+                            | In the task 
+                            strong select mahjong
+                            | , our $\mathcal{E}_0$ 
+                            | correctly identified the target object specified by the instruction and completed the task without knocking over any other items.
+
+                .d-flex.flex-wrap.justify-content-center.gap-4
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/vlabench-compare-3/pi0_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_0$-FAST Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/vlabench-compare-3/pi0fast_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\pi_{0.5}$ Failure
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/vlabench-compare-3/pi05_failure.mp4")
+                    .text-center(style="width:22%")
+                        h5.mt-3 $\mathcal{E}_0$ Success
+                        video(autoplay loop muted playsinline style="width:100%; border-radius:10px;"
+                            src="assets/img/result/vlabench-compare-3/e0_success.mp4")
+                .row.justify-content-center.mt-5
+                    .col-lg-10.text-center
+                        p.text-black
+                            | In the task 
+                            strong select painting
+                            | , our $\mathcal{E}_0$ correctly interpreted the task instruction and 
+                            | completed the task accordingly, rather than mechanically pressing the center button.
+
 
 
         section#robotwin-result.page-section.bg-white
